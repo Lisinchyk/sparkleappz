@@ -26,13 +26,13 @@ body {
 } */
 .header {
   width: 100%;
-  border-bottom: 1px solid #dcdcdc;
-  padding-bottom: 25px; }
+  border-bottom: 1px solid #dcdcdc; }
   .header__contacts {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--bacground-color);
-    padding: 8px 20px; }
+    background-color: var(--bacground-color); }
+    .header__contacts-container {
+      padding: 8px 20px;
+      display: flex;
+      justify-content: flex-end; }
     .header__contacts-link {
       text-decoration: none;
       color: #000;
@@ -61,8 +61,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px; }
+    padding: 14px 20px; }
   .header__menu {
     margin-left: auto; }
   .header__logo {
