@@ -4,91 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/jpg" href="/sitefavicon.png"/>
-    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/jpg" href="sitefavicon.png"/>
     <script src="https://kit.fontawesome.com/d5bb3d1cc4.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Montserrat:400,500,700|Poppins:400,500,700|Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/libs/owlcarousel2/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/libs/owlcarousel2/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
     <title></title>
 </head>
 <body>
     <div class="wrapper">
         <header class="header">
-            <div class="header__contacts-wrapper">
-                <div class="header__contacts">
-                    <div class="container header__contacts-container">
-                        <a class="header__contacts-link" href="tel:+91-7737791591">+91-7737791591</a>
-                        <a class="header__contacts-link" href="mailto:info@sparkleappz.com">info@sparkleappz.com</a>
-                    </div>
+            <div class="header__top">
+                <div class="header__top-container">
+                    <a class="header__top-link" href="mailto:info@sparkleappz.com">info@sparkleappz.com</a>
+                    <a class="header__top-link" href="tel:+91-7737791591">+91-7737791591</a>
                 </div>
             </div>
             <div class="container">
-                <div class="header__wrapper">
+                <div class="header__bottom">
                     <div class="header__logo">
-                        <a class="logo-link" href="#">
-                            <img class="logo-img" src="assets/images/logo.png" alt="logo">
+                        <a class="header__logo-link" href="#">
+                            <img class="header__logo-img" src="assets/images/logo.png" alt="company logo">
                         </a>
                     </div>
-                    <nav class="header__menu">
-                        <div class="burger__menu"><span></span></div>
-                        <div class="header__main-menu">
-                            <ul class="main-menu__list">
-                                <li class="main-menu__item active">
-                                    <a class="main-menu__link" href="#">home</a>
-                                </li>
-                                <li class="main-menu__item">
-                                    <a class="main-menu__link" href="#">about</a>
-                                </li>
-                                <li class="main-menu__item ">
-                                    <a class="main-menu__link" href="#">services<i class="fas fa-angle-down fa-sm"></i></a>
-                                    <div class="main-submenu">
-                                        <ul class="submenu__list">
-                                            <li class="submenu__item">
-                                                <a href="#" class="submenu__link">iOS App Development</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="#" class="submenu__link">Android App Development</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="#" class="submenu__link">Websites Development Services</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="#" class="submenu__link">Unity 3D Game Development</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="#" class="submenu__link">Digital Marketing Services</a>
-                                            </li>
-                                            <li class="submenu__item">
-                                                <a href="#" class="submenu__link">UI/UX Design Services</a>
-                                            </li>
-                                        </ul>    
-                                    </div>
-                                </li>
-                                <li class="main-menu__item">
-                                    <a class="main-menu__link" href="#">portfolio</a>
-                                </li>
-                                <li class="main-menu__item">
-                                    <a class="main-menu__link" href="#">blog</a>
-                                </li>
-                                <li class="main-menu__item">
-                                    <a class="main-menu__link" href="#">contact</a>
-                                </li>
-                                <li class="main-menu__item">
-                                    <a class="main-menu__btn" href="#">Get A Free Quote</a>
-                                    <a class="main-menu__btn" href="#"> Call<i
-                                        class="fas fa-phone-alt main-menu__btn-phone"></i></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                    
+                    <div class="burger__menu" id="burgerBtn"></div>
                 </div>
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link active" href="#">home</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">about</a>
+                        </li>
+                        <li class="main-menu__item dropdown">
+                            <a class="main-menu__link" href="#">services</a>
+                            <div class="submenu">
+                                <ul class="submenu__list">
+                                    <li class="submenu__item">
+                                        <a href="#" class="submenu__link">iOS App Development</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#" class="submenu__link">Android App Development</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#" class="submenu__link">Websites Development Services</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#" class="submenu__link">Unity 3D Game Development</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#" class="submenu__link">Digital Marketing Services</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="#" class="submenu__link">UI/UX Design Services</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">portfolio</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">blog</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">contact</a>
+                        </li>
+                    </ul>
+                    <div class="main-menu__btn-block">
+                        <a class="main-menu__btn-link" href="#">Get a free quote</a>
+                        <a class="main-menu__btn-link" href="#">Call <i class="fas fa-phone-alt main-menu__btn-phone"></i></a>
+                    </div>
+                </nav>
             </div>
         </header>
-        <main class="main"></main>
-        <footer class="footer"></footer>
+        <section class="first-screen container">
+            <div class="first-screen__img">
+                <img src="assets/images/banner_img.png" alt="phone">
+            </div>
+            <div class="first-screen__main-title">
+                <h1 class="first-screen__title">
+                    We conceptualize, <span>design</span> <span>and</span> <span>develop apps</span> that people love
+                </h1>
+            </div>
+        </section>
+        <section class="info">
+            <div class="info__container">
+                <h2 class="info__title"><span>We love </span>what we do</h2>
+                <div class="info__description">
+                    <p class="info__description-text">
+                        <a class="info__description-link" href="#">Sparkle Appz</a>
+                         values their customers and strives to deliver software applications for them. These solutions
+                         help enterprises and clients increase productivity and facilitate workflow management. We focus
+                         to deliver our expertise to our clients within time and make sure that our solutions be
+                         aesthetic, technically functional, user-friendly and responsive.
+                    </p>
+                </div>
+                <a class="info__btn" href="#">About us</a>
+            </div>
+        </section>
+        <section class="about">
+            <div class="about__container">
+                <h2 class="about__title">How we can help you?</h2>
+                <div class="about__description">
+                    <p class="about__text">
+                        We believe in building <span>fully fledged, stable, and scalable product applications and designs.</span> We
+                        professionally cater all the major platforms and development tools including <a
+                          href="#">Android</a> <a href="#">IOS</a> <a href="#">Unity3D</a> <a href="#">UI/UX designs</a>
+                          <a href="#">Web development</a> services. We also offer SEO & ASO which is essential for any
+                          digital marketing strategy.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="services">
+            <div class="services__container">
+                <h2 class="services__title">Our services</h2>
+                <div class="services__boxes">
+                    <div class="services__box">
+                        <h3 class="services__box-title">IPhone App Development</h3>
+                        <p class="services__box-text">
+                            Our devoted IOS development team is committed to developing high <a href="#">valued
+                              mobile</a> application solutions suitable for any workflow or industry. We use modern
+                              programming languages and approaches to extend and scale our products.
+                        </p>
+                    </div>
+                    <div class="services__box">
+                        <h3 class="services__box-title">Android App Development</h3>
+                        <p class="services__box-text">
+                            At <a href="#">SparkleAppz</a> , we have expert team in Android App Development, creating
+                            innovative android applications for individuals, enterprises and can develop anything, a
+                            client wants on the <span>Android</span> platform. Our team always try to give user, the best
+                            Android
+                            applications for their business.
+                        </p>
+                    </div>
+                    <div class="services__box">
+                        <h3 class="services__box-title">UI / UX Designing</h3>
+                        <p class="services__box-text">
+                            Our enthusiast UI and UX designers enjoy crafting progressive, yet <a href="#">empathic
+                            solutions</a> , bringing efficiency and effectiveness that gives value to your business.
+                            We design to inspire and mesmerize.
+                        </p>
+                    </div>
+                    <div class="services__box">
+                        <h3 class="services__box-title">Website Development</h3>
+                        <p class="services__box-text">
+                            We offer custom web app development providing seamless <a href="#">user experience</a> and
+                            ensure secure and strong code base from prototypes to logos design. We develop web apps with
+                            outstanding performance that can increase the chances of your business success.
+                        </p>
+                    </div>
+                    <div class="services__box">
+                        <h3 class="services__box-title">Unity 3D Game Development</h3>
+                        <p class="services__box-text">
+                            Our <a href="#">skilled professionals</a> build games for various target platforms based on
+                            Unity framework. They ensure the best possible performance, quality, and responsiveness of
+                            applications - translating design ideas, concepts, and requirements into a functional and
+                            engaging game. We focus on sophisticated design and a quality product.
+                        </p>
+                    </div>
+                    <div class="services__box">
+                        <h3 class="services__box-title">SEO / SMM Digital Marketing</h3>
+                        <p class="services__box-text">
+                            We offer digital marketing services at reasonable packages. Our <a href="#">experienced SEO
+                            experts</a> use different optimization methods to increase customers to your website and
+                            keep you on the top of every popular and competitive search engines out there.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clients">
+            <div class="clients__container">
+                <h2 class="clients__title">Who we've worked with</h2>            
+                <div class="owl-carousel clients__slider-box">
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/1.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/2.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/3.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/4.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/5.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/6.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/7.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/8.png" alt="">
+                    </div>
+                    <div class="clients__slide">
+                        <img class="clients__img" src="assets/images/client-companies/9.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="assets/libs/jquery/jquery-3.4.1.min.js"></script>
+    <script src="assets/libs/owlcarousel2/owl.carousel.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>
